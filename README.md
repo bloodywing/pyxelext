@@ -35,3 +35,11 @@ textblock(x: int, y: int, txt: str, nl_px: int = 6, drop_whitespace: bool = True
 
 ![text in action](pyxelext/examples/images/text.gif "text in action")
 
+`# pyxelext/physics.py`
+Needs `pymunk` in order to work.
+```python
+debug_draw_options() #  pretty much similar to pygame function in pymunk.
+static_rect(x: int, y: int, w: int, h: int, col: int, space: pymunk.Space, **kwargs)  # static rectangle from pyxel
+static_circ(x: int, y: int, r: int, col: int, space: pymunk.Space, **kwargs)  # static circle
+oopv_sleep(space: pymunk.Space, r=0)  # put this in your draw function so bodies in space will be inactive once they've left the pyxel screen
+```
