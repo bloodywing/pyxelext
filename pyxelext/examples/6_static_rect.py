@@ -1,6 +1,5 @@
 import pyxel
 import pymunk
-from random import randint
 from pyxelext.physics import static_rect, static_circ, debug_draw_options, oopv_sleep
 
 space = pymunk.Space()

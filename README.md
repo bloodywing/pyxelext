@@ -43,3 +43,11 @@ static_rect(x: int, y: int, w: int, h: int, col: int, space: pymunk.Space, **kwa
 static_circ(x: int, y: int, r: int, col: int, space: pymunk.Space, **kwargs)  # static circle
 oopv_sleep(space: pymunk.Space, r=0)  # put this in your draw function so bodies in space will be inactive once they've left the pyxel screen
 ```
+
+`# pyxelext/system.py`
+Adds features to pyxel that are currently not implemented in the main library
+```python
+set_fullscreen(real_fullscreen: bool = False)  # enables fullscreen, real_fullscreen changes desktop resolution as well
+set_windowed()  # enables windowed mode
+set_window_icon(icon: PathLike, bytes_per_pixel: int = 4)  # lets you set your own icon for the window title. tested with png and .ico with alpha
+```

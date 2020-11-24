@@ -1,2 +1,4 @@
 pyxel
 pymunk
+pysdl2
+pillow
