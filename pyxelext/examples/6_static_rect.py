@@ -48,5 +48,7 @@ for r1 in range(5):
     for r2 in range(2):
         particles.append(Particle(startpos=(80+r1, r2)))
 
-pyxel.init(256, 256, scale=2, fps=60)
-pyxel.run(update, draw)
+
+if __name__ == '__main__':
+    pyxel.init(256, 256, scale=2, fps=60)
+    pyxel.run(update, draw)

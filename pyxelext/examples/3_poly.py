@@ -16,5 +16,6 @@ def draw():
          col=pyxel.frame_count % 16)
 
 
-pyxel.init(256, 256, scale=2, fps=60)
-pyxel.run(update, draw)
+if __name__ == '__main__':
+    pyxel.init(256, 256, scale=2, fps=60)
+    pyxel.run(update, draw)

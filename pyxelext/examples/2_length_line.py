@@ -15,5 +15,6 @@ def draw():
     pyxel.text(10, 70, f'Line 2 has a length of {length2} PX', pyxel.COLOR_GREEN)
 
 
-pyxel.init(256, 256, scale=2, fps=10)
-pyxel.run(update, draw)
+if __name__ == '__main__':
+    pyxel.init(256, 256, scale=2, fps=10)
+    pyxel.run(update, draw)
